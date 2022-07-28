@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Numbers With 2 Exceptions</title>
+</head>
+<body>
+    <script>
+
+// create a loop that counts from 1 to 200
+for ( let num = 1; num < 201; num ++ ) {
+  
+  // check if the number is divisible by 6 or 8
+  let checkForSix = num % 6;
+  let checkForEight = num % 8;
+  
+  // if the number is divisible by both 6 and 8, then print ShamsTiidelab
+  if ( (checkForSix == 0) && (checkForEight == 0) ) 
+  	console.log("ShamsTiidelab");
+  
+  // if the number is divisible by 6, then print Shams
+  else if (checkForSix == 0)
+    console.log("Shams");
+  
+  // if the number is divisible by 8, then print Tiidelab
+  else if (checkForEight == 0)
+    console.log("Tiidelab");
+  
+  // otherwise just print the number
+  else
+    console.log( num );
+} 
+    </script>
+    
+</body>
+</html>
